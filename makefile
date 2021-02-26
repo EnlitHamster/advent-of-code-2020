@@ -10,7 +10,7 @@ MNF := $(BIN)META-INF/
 
 # Java compiler options
 JC := javac
-JFLAGS := -d $(BIN) -sourcepath $(SRC) -cp ".:$(JUN)"
+JFLAGS := -d $(BIN) -sourcepath $(SRC) -cp ".:$(JUN)" -Xlint:deprecation
 
 # Finding all java files in the project
 OBJJ := $(patsubst ./%,%,$(patsubst %.java,%.class,$(shell find src -type f -name '*.java')))
