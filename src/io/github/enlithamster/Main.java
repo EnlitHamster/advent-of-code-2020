@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.Scanner;
 
 import io.github.enlithamster.one.DayOne;
+import io.github.enlithamster.two.DayTwo;
 
 public class Main {
 
@@ -13,7 +14,8 @@ public class Main {
     System.out.print(
     "by Sandro Massa (aka EnlitHamster, EnlitOwl)\n"
     +   "\n"
-    +   "[1] Report Repair\n"
+    +   "[1]\tReport Repair\n"
+    +   "[2]\tPassword Philosophy\n"
     +   "\n"
     +   "> "
     );
@@ -26,6 +28,7 @@ public class Main {
     // Execution of correct day code
     switch (selection) {
       case 1: (new DayOne()).launch();
+      case 2: (new DayTwo()).launch();
     }
 
   }
