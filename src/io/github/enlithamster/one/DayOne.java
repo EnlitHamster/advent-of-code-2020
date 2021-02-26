@@ -33,14 +33,14 @@ public class DayOne implements DayChallenge {
 
     // Searching for two keys
     Integer[] keys = getBinaryKeys(numbers, 2020);
-    if (keys != null) System.out.println("The searched numbers are " + keys[0] + " and " + keys[1] + ".\nThe answer is " + (keys[0] * keys[1]));
+    if (keys != null) System.out.println("The searched numbers are " + keys[0] + " and " + keys[1] + ".\nThe answer is " + (keys[0] * keys[1]) + ".");
     else System.out.println("No keys found.");
 
     // -- PART 2
 
     // Searching for three keys
     keys = getTernaryKeys(numbers, 2020);
-    if (keys != null) System.out.println("The searched numbers are " + keys[0] + ", " + keys[1] + " and " + keys[2] + ".\nThe answer is " + (keys[0] * keys[1] * keys[2]));
+    if (keys != null) System.out.println("The searched numbers are " + keys[0] + ", " + keys[1] + " and " + keys[2] + ".\nThe answer is " + (keys[0] * keys[1] * keys[2]) + ".");
     else System.out.println("No keys found.");
 
   }
