@@ -1,9 +1,9 @@
 package io.github.enlithamster;
 
-import java.io.File;
 import java.util.Scanner;
 
 import io.github.enlithamster.one.DayOne;
+import io.github.enlithamster.three.DayThree;
 import io.github.enlithamster.two.DayTwo;
 
 public class Main {
@@ -16,6 +16,7 @@ public class Main {
     +   "\n"
     +   "[1]\tReport Repair\n"
     +   "[2]\tPassword Philosophy\n"
+    +   "[3]\tToboggan Trajectory\n"
     +   "\n"
     +   "> "
     );
@@ -29,6 +30,7 @@ public class Main {
     switch (selection) {
       case 1: (new DayOne()).launch();
       case 2: (new DayTwo()).launch();
+      case 3: (new DayThree()).launch();
     }
 
   }
