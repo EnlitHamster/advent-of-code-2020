@@ -28,7 +28,7 @@ OBJJ := $(patsubst ./%,%,$(patsubst %.java,%.class,$(shell find src -type f -nam
 # Jar creation
 build b: mkdirs $(MNF)MANIFEST.MF $(OBJJ) $(BIN)resources/
 	@echo Generating Jar file...
-	cd $(BIN); jar cvmf META-INF/MANIFEST.MF DayOfAdvent2020.jar $(patsubst $(SRC)%,%,$(OBJJ)) resources/*; cd ..
+	@cd $(BIN); jar cvmf META-INF/MANIFEST.MF DayOfAdvent2020.jar $(patsubst $(SRC)%,%,$(OBJJ)) resources/*; cd ..
 
 # Clean jar creation
 clean-build cb: c b
