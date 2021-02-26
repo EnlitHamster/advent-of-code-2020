@@ -8,6 +8,7 @@ import io.github.enlithamster.DayChallenge;
 
 public class DayTwo implements DayChallenge {
 
+  @Override
   public void launch() {
 
     // Setup

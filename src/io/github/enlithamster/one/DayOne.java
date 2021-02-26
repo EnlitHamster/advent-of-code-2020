@@ -11,6 +11,7 @@ import io.github.enlithamster.DayChallenge;
 
 public class DayOne implements DayChallenge {
 
+  @Override
   public void launch() {
 
     // Setup
