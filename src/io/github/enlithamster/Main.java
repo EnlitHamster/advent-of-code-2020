@@ -6,6 +6,7 @@ import io.github.enlithamster.four.DayFour;
 import io.github.enlithamster.one.DayOne;
 import io.github.enlithamster.three.DayThree;
 import io.github.enlithamster.two.DayTwo;
+import io.github.enlithamster.five.DayFive;
 
 public class Main {
 
@@ -18,6 +19,7 @@ public class Main {
                     + "[2]\tPassword Philosophy\n"
                     + "[3]\tToboggan Trajectory\n"
                     + "[4]\tPassport Processing\n"
+                    + "[5]\tBinary Boarding\n"
                     + "\n"
                     + "> " );
 
@@ -32,6 +34,7 @@ public class Main {
       case 2: (new DayTwo()).launch();
       case 3: (new DayThree()).launch();
       case 4: (new DayFour()).launch();
+      case 5: (new DayFive()).launch();
     }
 
   }
